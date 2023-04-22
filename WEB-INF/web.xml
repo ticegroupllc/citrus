@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+    <display-name>Hello, World Application</display-name>
+    <description>
+	This is a simple web application with a source code organization
+	based on the recommendations of the Application Developer's Guide.
+    </description>
+
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>mypackage.Hello</servlet-class>
+    </servlet>
+    <servlet>
+    	<description>
+    	</description>
+    	<display-name>GetData</display-name>
+    	<servlet-name>GetData</servlet-name>
+    	<servlet-class>GetData</servlet-class>
+    </servlet>
+    <servlet>
+    	<description>
+    	</description>
+    	<display-name>GetEmployeeDetails</display-name>
+    	<servlet-name>GetEmployeeDetails</servlet-name>
+    	<servlet-class>GetEmployeeDetails</servlet-class>
+    </servlet>
+    <servlet>
+    	<description>
+    	</description>
+    	<display-name>InsertEmployeeDetails</display-name>
+    	<servlet-name>InsertEmployeeDetails</servlet-name>
+    	<servlet-class>InsertEmployeeDetails</servlet-class>
+    </servlet>
+    <servlet>
+    	<description>
+    	</description>
+    	<display-name>myservletDB</display-name>
+    	<servlet-name>myservletDB</servlet-name>
+    	<servlet-class>myservletDB</servlet-class>
+    </servlet>
+    <servlet>
+    	<description>
+    	</description>
+    	<display-name>InsertEmailListSubscriber</display-name>
+    	<servlet-name>InsertEmailListSubscriber</servlet-name>
+    	<servlet-class>InsertEmailListSubscriber</servlet-class>
+    </servlet>
+    <servlet>
+    	<description>
+    	Inserts the customer order into the orders database</description>
+    	<display-name>InsertOrder</display-name>
+    	<servlet-name>InsertOrder</servlet-name>
+    	<servlet-class>InsertOrder</servlet-class>
+    </servlet>
+    <servlet>
+    	<description>
+    	Registers a new user in the user database</description>
+    	<display-name>RegisterNewUser</display-name>
+    	<servlet-name>RegisterNewUser</servlet-name>
+    	<servlet-class>RegisterNewUser</servlet-class>
+    </servlet>
+    <servlet>
+    	<description>
+    	</description>
+    	<display-name>GFGLoginServlet</display-name>
+    	<servlet-name>GFGLoginServlet</servlet-name>
+    	<servlet-class>GFGLoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+    	<description>
+    	</description>
+    	<display-name>GFGLogoutServlet</display-name>
+    	<servlet-name>GFGLogoutServlet</servlet-name>
+    	<servlet-class>GFGLogoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+    	<description>
+    	</description>
+    	<display-name>GFGProfileServlet</display-name>
+    	<servlet-name>GFGProfileServlet</servlet-name>
+    	<servlet-class>GFGProfileServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>GetData</servlet-name>
+    	<url-pattern>/GetData</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>GetEmployeeDetails</servlet-name>
+    	<url-pattern>/GetEmployeeDetails</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>InsertEmployeeDetails</servlet-name>
+    	<url-pattern>/InsertEmployeeDetails</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>myservletDB</servlet-name>
+    	<url-pattern>/myservletDB</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>InsertEmailListSubscriber</servlet-name>
+    	<url-pattern>/InsertEmailListSubscriber</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>InsertOrder</servlet-name>
+    	<url-pattern>/InsertOrder</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>RegisterNewUser</servlet-name>
+    	<url-pattern>/RegisterNewUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>GFGLoginServlet</servlet-name>
+    	<url-pattern>/GFGLoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>GFGLogoutServlet</servlet-name>
+    	<url-pattern>/GFGLogoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>GFGProfileServlet</servlet-name>
+    	<url-pattern>/GFGProfileServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
